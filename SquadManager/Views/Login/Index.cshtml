@@ -1,0 +1,18 @@
+﻿@model SquadManager.Models.UserViewModel
+
+<link href="~/css/login.css" rel="stylesheet" />
+
+<section>
+	<h1>Autenticação</h1>
+
+	<form action="/Login/Test" method="post">
+	<input type="text" name="email" value="@Model.Email" placeholder="Username/e-mail">
+	<input type ="password" name="passoword" value="@Model.Password" placeholder="Senha">
+
+	<a href="#">Esqueceu a senha?</a>
+
+	<button type="submit">Login</button>
+	</form>
+
+	<label>Não tem conta? <a href="#">Crie aqui</a></label>
+</section>
