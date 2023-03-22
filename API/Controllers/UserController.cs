@@ -7,6 +7,12 @@ namespace API.Controllers
 	[ApiController]
 	public class UserController : ControllerBase
 	{
+		/// <summary>
+		/// Autentica o usuário
+		/// </summary>
+		/// <param name="username">Username do usuário</param>
+		/// <param name="password">Senha do usuário</param>
+		/// <returns></returns>
 		[HttpGet]
 		public IActionResult Login(string username, string password)
 		{
